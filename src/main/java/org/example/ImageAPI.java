@@ -94,6 +94,7 @@ public class ImageAPI {
         int count = 0;
         for (MatOfPoint contour : contours) {
             Rect rect = Imgproc.boundingRect(contour);
+            System.out.println("Found rectangle: width=" + rect.width + ", height=" + rect.height);
             if (rect.width == width && rect.height == height) {
                 count++;
             }

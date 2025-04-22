@@ -29,22 +29,22 @@ public class ImageAPITest {
     @Test
     public void testFloodFill() throws Exception {
         ImageAPI api = new ImageAPI();
-        api.floodFillImage("/home/ya/computer_vision_technology/lab_5/Images/1/image.jpg", new Point(0, 0), new Scalar(0, 255, 0), null, null);
+        api.floodFillImage("/home/ya/computer_vision_technology/lab_5/Images/1/1.jpg", new Point(0, 0), new Scalar(0, 255, 0), null, null);
         // Проверить результат вручную
     }
 
     @Test
     public void testPyramidOperations() throws Exception {
         ImageAPI api = new ImageAPI();
-        api.pyramidOperations("/home/ya/computer_vision_technology/lab_5/Images/1/image.jpg", 2, true); // Понижение
-        api.pyramidOperations("/home/ya/computer_vision_technology/lab_5/Images/1/image.jpg", 2, false); // Повышение
+        api.pyramidOperations("/home/ya/computer_vision_technology/lab_5/Images/1/1.jpg", 2, true); // Понижение
+        api.pyramidOperations("/home/ya/computer_vision_technology/lab_5/Images/1/1.jpg", 2, false); // Повышение
         // Проверить результат вручную
     }
 
     @Test
     public void testIdentifyRectangles() throws Exception {
         ImageAPI api = new ImageAPI();
-        api.identifyRectangles("/home/ya/computer_vision_technology/lab_5/Images/1/image.jpg", 100, 50);
+        api.identifyRectangles("/home/ya/computer_vision_technology/lab_5/Images/1/1.jpg", 38, 47);
         // Проверить результат вручную
     }
 }
